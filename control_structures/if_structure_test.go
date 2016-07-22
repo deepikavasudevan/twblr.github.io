@@ -3,7 +3,7 @@ package control_structures
 import "testing"
 
 var fizzBuzzTests = []struct {
-	input  int32
+	input  int
 	output string
 }{
 	{2, "2"},

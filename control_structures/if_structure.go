@@ -1,5 +1,15 @@
 package control_structures
 
-func fizzBuzz(i int32) string {
-	return ""
+import "strconv"
+
+func fizzBuzz(i int) string {
+	if i%3 == 0 && i%5 != 0  {
+		return "Fizz"
+	} else if i%3 != 0 && i%5 == 0 {
+		return "Buzz"
+	} else if i%3 == 0 && i%5 == 0 {
+		return "FizzBuzz"
+	}
+
+	return strconv.Itoa(i)
 }
